@@ -15,8 +15,65 @@ $(".navBar-Showing").click(function () {
     $(".menu-spoiler").fadeOut(500);
 });
 
-
+$('#body').css('min-height', '100%');
+$('#body').css('min-width', '100%');
 // document.body.style.backgroundImage = 'url(https://unsplash.it/' + window.innerWidth + '/' + window.innerHeight + '/?random&blur)';
+$(function() {
+
+  $('#menu-toggle').click(function(event) {
+    $('#menu').animate({
+      width: 'toggle'
+    }, 100);
+    $('.menu-link').fadeIn(5000);
+    $('#menu h1').fadeToggle(100);
+
+    $(this).toggleClass('span');
+  });
+});
+
+// var y = document.getElementById('opac').value;
+//
+// $(function() {
+//   $('#color1').change(function() {
+//     var x = document.getElementById('color1').value;
+//
+//     $('#menu').css("background-color", " " + x);
+//   });
+//
+//   $('#opac').change(function() {
+//     if ($(this).min <= 30) {
+//       y += 20;
+//     }
+//     $('#menu').fadeTo(1000, y / 100);
+//   });
+//
+// });
+
+/******** Horizontal Scrolling **********/
+
+// var marginX = 0;
+// var destination = 0;
+// var speed = 2;
+// var scroller = null;
+//
+// //settings for slider
+// var animationSpeed = 1000;
+// //cache DOM elements
+// var $slider = $('#slider');
+// var $slideContainer = $('#slides', $slider);
+// var $slides = $('.img', $slider);
+//
+// var interval;
+//
+// function scrollX(elementId) {
+//   destination = document.getElementById(elementId).offsetLeft;
+//
+//   interval = setTimeout(function() {
+//     $slideContainer.animate({
+//       'margin-left': '-=' + destination
+//     }, animationSpeed);
+//   });
+// }
 
 var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName("close")[0];
