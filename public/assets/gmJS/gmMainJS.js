@@ -15,8 +15,8 @@ $(".navBar-Showing").click(function () {
     $(".menu-spoiler").fadeOut(500);
 });
 
-$('#body').css('min-height', '100%');
-$('#body').css('min-width', '100%');
+// $('#body').css('min-height', '100%');
+// $('#body').css('min-width', '100%');
 // document.body.style.backgroundImage = 'url(https://unsplash.it/' + window.innerWidth + '/' + window.innerHeight + '/?random&blur)';
 $(function() {
 
@@ -30,6 +30,17 @@ $(function() {
     $(this).toggleClass('span');
   });
 });
+
+
+
+
+
+
+
+
+
+
+
 
 // var y = document.getElementById('opac').value;
 //
@@ -75,8 +86,8 @@ $(function() {
 //   });
 // }
 
-var modal = document.getElementById('myModal');
-var span = document.getElementsByClassName("close")[0];
+var modal = document.getElementById('gmMContact');
+var span = document.getElementsByClassName("gmClose")[0];
 
 $('.mainContactButton').click(function(){
 		modal.style.display = "block";
