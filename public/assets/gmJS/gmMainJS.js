@@ -1,77 +1,72 @@
-//logic for the menu//
-var $images = [];
-$("#d1 > .c1 > a").each(function() {
-    $images.push($("img", this).attr("src"));
-});
-var $length = $images.length;
-var $imgShow = 0;
-$("#d1 > .c1").html( $("#d1 > .c1 > a:first") );
-$(".navBar").click(function () {
-    $("img").attr("src", $images[++$imgShow % $length]);
-    $(".menu-spoiler").fadeIn(500);
-});
 
-$(".navBar-Showing").click(function () {
-    $(".menu-spoiler").fadeOut(500);
+
+//porfolio logic
+$('.workNav').click(function(e){
+  $('.portWrap1').fadeOut(500);
+
+      var gmbot = $('#gmPortBottom');
+        gmbot.toggleClass('portfolioBottomMain');
+         $(".gmPortfolioShower").css("display","block")
 });
 
 // $('#body').css('min-height', '100%');
 // $('#body').css('min-width', '100%');
 // document.body.style.backgroundImage = 'url(https://unsplash.it/' + window.innerWidth + '/' + window.innerHeight + '/?random&blur)';
-$(function() {
-
-  $('#menu-toggle').click(function(event) {
-    $('#menu').animate({
-      width: 'toggle'
-    }, 100);
-    $('.menu-link').fadeIn(5000);
-    $('#menu h1').fadeToggle(100);
-
-    $(this).toggleClass('span');
-  });
-});
-
-
+// $(function() {
+//
+//   $('#menu-toggle').click(function(event) {
+//     $('#menu').animate({
+//       width: 'toggle'
+//     }, 100);
+//     $('.menu-link').fadeIn(5000);
+//     $('#menu h1').fadeToggle(100);
+//
+//     $(this).toggleClass('span');
+//   });
+// });
 
 
 
-var prevX = 0;
-var prevY = 0;
-var posX = "-50%";
-var posY = "-50%";
-var moveUp = false;
-var movedLeft = false;
 
-
-// EVENT HANDLERS
-$( ".move-background" ).hover(function( event ) {
-  prevX = event.pageX;
-  prevY = event.pageY;
-}, null);
-
-$( ".move-background" ).mousemove(function( event ) {
-  moveBackground(event);
-});
-
-// PARALLAX BACKGROUN EFFECT
-function moveBackground( event ) {
-
-  directionMoved( event );
-
-  posX = (movedLeft) ? "-49%" : "-51%";
-  posY = (movedUp) ? "-49%" : "-51%";
-
-  $(".background").css({"-webkit-transform":"translate("+ posX + ","+posY+")"});
-
-  prevX = event.pageX;
-  prevY = event.pageY;
-}
-
-function directionMoved(event)
-{
-  movedLeft = (prevX > event.pageX) ? true : false;
-  movedUp = (prevY > event.pageY) ? true : false;
-}
+//
+//
+//
+// var prevX = 0;
+// var prevY = 0;
+// var posX = "-50%";
+// var posY = "-50%";
+// var moveUp = false;
+// var movedLeft = false;
+//
+//
+// $( ".move-background" ).hover(function( event ) {
+//   prevX = event.pageX;
+//   prevY = event.pageY;
+// }, null);
+//
+// $( ".move-background" ).mousemove(function( event ) {
+//   moveBackground(event);
+// });
+//
+//
+// function moveBackground( event ) {
+//
+//   directionMoved( event );
+//
+//   posX = (movedLeft) ? "-49%" : "-51%";
+//   posY = (movedUp) ? "-49%" : "-51%";
+//
+//   $(".background").css({"-webkit-transform":"translate("+ posX + ","+posY+")"});
+//
+//   prevX = event.pageX;
+//   prevY = event.pageY;
+// }
+//
+// function directionMoved(event)
+// {
+//   movedLeft = (prevX > event.pageX) ? true : false;
+//   movedUp = (prevY > event.pageY) ? true : false;
+// }
 
 
 
