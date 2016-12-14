@@ -1,46 +1,56 @@
-<!-- <section id="hire">
-  <h1>Contact Me</h1>
+	{{> main/gmMainMenu2}}
 
-  <form>
-      <div class="field name-box">
-          <input type="text" id="name" placeholder="Who Are You?"/>
-          <label for="name">Name</label>
-          <span class="ss-icon">check</span>
+<div class="container aboutMe">
+  <div class="gmAboutMe">
+    <h1> About Me </h1>
+    <hr>
+      <p>
+        I’m a web developer. I spend most of my day working with HTML, CSS,
+        and JavaScript; while trying to learn the latest in new technologies. I
+        try to inhale a wide variety of potentially usefull information.
+        I build websites with hard work and hope to one day be consider a great programmer.
+      </p>
+      <div class="social-1">
+        <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
       </div>
-
-      <div class="field email-box">
-          <input type="text" id="email" placeholder="name@email.com"/>
-          <label for="email">Email</label>
-          <span class="ss-icon">check</span>
+      <div class="social-1">
+        <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
       </div>
-
-      <div class="field msg-box">
-          <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
-          <label for="msg">Msg</label>
-          <span class="ss-icon">check</span>
+      <div class="social-1">
+        <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
       </div>
-
-      <input class="button" type="submit" value="Send" />
-</form>
-</section> -->
-<!-- <div id="myModal" class="modal">
-  Modal content
-  <div class="modal-content">
-    <span class="close">x</span>
-
-    <form method="POST" action="/sendContact">
-      <label for="gmEmail">Email</label>
-      <input type="text" id="gmEmail" name="gmEmail2">
-      <label for="fname">Name </label>
-      <input type="text" id="gmName" name="firstname">
-      <textarea placeholder="Message" class="gmMessage" name="gmMessage">
-      </textarea>
-      <button type="submit" id="gmSubmit" value="Submit" method="POST" action="/sendContact" rows="6" cols="100"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-    </form>
   </div>
 
-</div> -->
 
+  </div>
+</div>
+
+
+
+<!-- <div class="arrow-right"></div> -->
+<div class="container gmContactForm">
+  <h1 class="contactLogo"> Contact Me </h1>
+  <div class="comments">
+    <form method="POST" action="/sendContact">
+      <label for="gmEmail">Email</label>
+      <input type="text" id="gmEmail" name="gmEmail2" placeholder="johntravolta@something.com">
+      <label for="fname" class="namelabel">Name </label>
+      <input type="text" id="gmName" name="firstname" placeholder="Gerardo Mestanza">
+      <label for="gmMessage" class="messagelabel">Message </label>
+      <input type="text" id="gmMessage" name="gmMessage" placeholder="Some text here...">
+
+
+      <!-- <textarea placeholder="Message" class="gmMessage" name="gmMessage"> -->
+
+      <button type="submit" id="gmSubmit" value="Submit" method="POST" action="/sendContact" rows="6" cols="100"> SEND </button>
+    </form>
+</div>
+
+
+
+
+
+<!--
 <div id="gmMContact">
   <div class="gmCheader">
     <span class="gmClose"> X </span>
@@ -56,28 +66,7 @@
       <button type="submit" id="gmSubmit" value="Submit" method="POST" action="/sendContact" rows="6" cols="100"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
     </form>
   </div>
-
-
-
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -93,24 +82,5 @@
 </div>
 
 <div class="contBxt">
-
-</div>
-
-<!-- The Modal
-<div id="myModal" class="modal">
-  Modal content
-  <div class="modal-content">
-    <span class="close">x</span>
-
-    <form method="POST" action="/sendContact">
-      <label for="gmEmail">Email</label>
-      <input type="text" id="gmEmail" name="gmEmail2">
-      <label for="fname">Name </label>
-      <input type="text" id="gmName" name="firstname">
-      <textarea placeholder="Message" class="gmMessage" name="gmMessage">
-      </textarea>
-      <button type="submit" id="gmSubmit" value="Submit" method="POST" action="/sendContact" rows="6" cols="100"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-    </form>
-  </div>
 
 </div> -->
