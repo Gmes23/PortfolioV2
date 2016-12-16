@@ -1,13 +1,80 @@
+//
+// $(document).ready(function() {
+//
+//     setTimeout(function(){
+//         $('body').addClass('loaded');
+//     }, 3000);
+//
+// });
+// var stop = window.location.href = "/about";
+
+$(document).ready(function() {
+
+// $('body').css('display', 'none');
+//
+// $('body').fadeIn(1000);
+
+
+
+$('.workNavA').click(function(event) {
+
+event.preventDefault();
+newLocation = this.href
+
+
+  $('body').fadeOut(500,newpage);
+
+
+});
+
+function newpage() {
+
+window.location = newLocation;
+
+}
+
+});
+
+
+//
+// $(".workNavB").click(function() {
+//   event.preventDefault();
+//   pageloader = this.href;
+//   $('#mainPage').fadeOut(1000, newpage);
+//
+//   $('body').css('display', 'none');
+//
+//   $('body').fadeIn(1000);
+//
+//   function newpage(){
+//     window.location =newLocation;
+//   }
+// });
+//
+
+
+
+
+
+
+
+
 
 
 //porfolio logic
-$('.workNav').click(function(e){
-  $('.portWrap1').fadeOut(500);
+// $('.workNav').click(function(e){
+//   $('.portWrap1').fadeOut(500);
+//
+//       var gmbot = $('#gmPortBottom');
+//         gmbot.toggleClass('portfolioBottomMain');
+//          $(".gmPortfolioShower").css("display","block")
+// });
 
-      var gmbot = $('#gmPortBottom');
-        gmbot.toggleClass('portfolioBottomMain');
-         $(".gmPortfolioShower").css("display","block")
-});
+
+
+
+
+
 
 // $('#body').css('min-height', '100%');
 // $('#body').css('min-width', '100%');
@@ -121,30 +188,30 @@ $('.workNav').click(function(e){
 //   });
 // }
 
-var modal = document.getElementById('gmMContact');
-var span = document.getElementsByClassName("gmClose")[0];
-
-$('.mainContactButton').click(function(){
-		modal.style.display = "block";
-});
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-$(".gm-Project-1").click(function(e) {
-    e.stopPropagation();
-    $(".gmPro-Des-Section").fadeToggle();
-});
-
-$(document).click(function(e) {
-    if (!$(e.target).closest('.gmPro-Des-Section').length) {
-        $('.gmPro-Des-Section').fadeOut();
-    }
-});
+// var modal = document.getElementById('gmMContact');
+// var span = document.getElementsByClassName("gmClose")[0];
+//
+// $('.mainContactButton').click(function(){
+// 		modal.style.display = "block";
+// });
+//
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
+//
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+//
+// $(".gm-Project-1").click(function(e) {
+//     e.stopPropagation();
+//     $(".gmPro-Des-Section").fadeToggle();
+// });
+//
+// $(document).click(function(e) {
+//     if (!$(e.target).closest('.gmPro-Des-Section').length) {
+//         $('.gmPro-Des-Section').fadeOut();
+//     }
+// });

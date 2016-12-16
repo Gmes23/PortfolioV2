@@ -17,6 +17,15 @@ router.get('/about', function(req, res){
   res.render('aboutHandle');
 });
 
+router.get('/work1', function(req, res){
+  res.render('work1handle');
+});
+
+router.get('/work2', function(req, res){
+  res.render('work2handle');
+});
+
+
 module.exports = router;
 
 var nodemailer = require('nodemailer');
