@@ -7,6 +7,12 @@
 //
 // });
 // var stop = window.location.href = "/about";
+// $(document).ready(function () {
+//   $('#portfolioPage').css('display', 'none');
+//
+//   $('#portfolioPage').fadeIn(5000);
+// });
+
 
 $(document).ready(function() {
 
@@ -36,7 +42,7 @@ window.location = newLocation;
 });
 
 
-//
+
 // $(".workNavB").click(function() {
 //   event.preventDefault();
 //   pageloader = this.href;
@@ -50,7 +56,7 @@ window.location = newLocation;
 //     window.location =newLocation;
 //   }
 // });
-//
+
 
 
 

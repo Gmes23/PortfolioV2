@@ -28,9 +28,9 @@ svg{
       background: black;
       position: absolute;
       left: 98%;
-      top: 39%;
+      top: 41%;
       /* width: 400px; */
-      height: 59.2340px;
+      height: 54.2340px;
       font-family: 'Bungee Inline', cursive;
       color: white;
       letter-spacing: -1px;
@@ -40,37 +40,23 @@ svg{
 }
 
 
-
-
 #portfolioPage{
   width: 100%;
   height: 100%;
-  -webkit-animation: fadeInUp .35s;  /* Safari 4+ */
-  -moz-animation:   fadeInUp .35s;  /* Fx 5+ */
-  -o-animation:     fadeInUp .35s;  /* Opera 12+ */
-  animation:        fadeInUp .35s ;
+  -webkit-animation: fadeInUp .55s;  /* Safari 4+ */
+  -moz-animation:   fadeInUp .55s;  /* Fx 5+ */
+  -o-animation:     fadeInUp .55s;  /* Opera 12+ */
+  animation:        fadeInUp .55s ;
 }
 
-#contactpage{
-  width: 100vh;
-  height: 100vw;
+.aboutMe{
+  /*width: 100vh;
+  height: 100vw;*/
   -webkit-animation: fadeInUp .35s; /* Safari 4+ */
   -moz-animation:    fadeInUp  .35s; /* Fx 5+ */
   -o-animation:      fadeInUp  .35s; /* Opera 12+ */
   animation:         fadeInUp  .35s;
 
-}
-
-
-#pageloadthis{
-  height: 100vh;
-  width: 100vw;
-  z-index: 9000;
-  -webkit-animation: fadeInUp .35s, fadeDown .5s /* Safari 4+ */
-  -moz-animation:    fadeInUp  .35s; /* Fx 5+ */
-  -o-animation:      fadeInUp  .35s; /* Opera 12+ */
-  animation:         fadeInUp  .35s;
-  background-color: black;
 }
 
 @keyframes fadeInUp {
@@ -84,12 +70,6 @@ svg{
     transform: none;
   }
 }
-
-/*@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }*/
 
 
 .pt-page-moveFromBottom {
