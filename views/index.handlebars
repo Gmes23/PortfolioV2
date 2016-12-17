@@ -126,8 +126,8 @@
     <canvas width="1" height="1" id="container" style="position:absolute"></canvas>
     <!-- Heavy Rain -->
     <div class="slide" id="slide-1" data-weather="rain" style="display:hidden;">
-      <div class="slide__element slide__element--date" style="display:hidden;">Sunday, 24<sup>th</sup> of October 2043</div>
-      <div class="slide__element slide__element--temp" style="display:hidden;">12°<small>C</small></div>
+      <div class="slide__element slide__element--date" style="display:none;">Sunday, 24<sup>th</sup> of October 2043</div>
+      <div class="slide__element slide__element--temp" style="display:none;">12°<small>C</small></div>
     </div>
     <!-- Drizzle -->
     <div class="slide" id="slide-2" data-weather="drizzle" style="display:hidden;">
@@ -149,12 +149,12 @@
       <div class="slide__element slide__element--date"><sup></sup> </div>
       <div class="slide__element slide__element--temp">34°<small>C</small></div>
     </div>
-    <nav class="slideshow__nav">
-      <a class="nav-item" href="#slide-1"><i class="icon icon--rainy"></i><span> Rain</span></a>
-      <a class="nav-item" href="#slide-2"><i class="icon icon--drizzle"></i><span> Drizzle </span></a>
-      <a class="nav-item" href="#slide-3"><i class="icon icon--sun"></i><span> Sun </span></a>
-      <a class="nav-item" href="#slide-4"><i class="icon icon--radioactive"></i><span> placeholder </span></a>
-      <a class="nav-item" href="#slide-5"><i class="icon icon--storm"></i><span> Storm </span></a>
+    <nav class="slideshow__nav" style="position: absolute;">
+      <a class="nav-item" href="#slide-1"><i class="icon icon--rainy"></i><span> <i class="fa fa-umbrella fa-3x" aria-hidden="true" style="color: white; margin-right: 20px; position: inline-flex;"></i></span></a>
+      <a class="nav-item" href="#slide-2"><i class="icon icon--drizzle"></i><span><i class="fa fa-tint fa-3x" aria-hidden="true" style="color: white;  margin-right: 20px; position: inline-flex;"></i> </span></a>
+      <a class="nav-item" href="#slide-3"><i class="icon icon--sun"></i><span><i class="fa fa-sun-o fa-3x" style="color: white;  margin-right: 20px; position: inline-flex;" aria-hidden="true" ></i></span></a>
+      <a class="nav-item" href="#slide-4" style="display: none;"><i class="icon icon--radioactive"></i><span> placeholder </span></a>
+      <a class="nav-item" href="#slide-5"><i class="icon icon--storm"></i><span> <i class="fa fa-bolt fa-3x" aria-hidden="true" style="color: white;  margin-right: 20px; position: inline-flex;"></i> </span></a>
     </nav>
   </div>
   <p class="nosupport">Sorry, but your browser does not support WebGL!</p>

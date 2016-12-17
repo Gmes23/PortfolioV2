@@ -27,7 +27,6 @@ $('.workNavA').click(function(event) {
 event.preventDefault();
 newLocation = this.href
 
-
   $('body').fadeOut(500,newpage);
 
 
@@ -40,6 +39,34 @@ window.location = newLocation;
 }
 
 });
+
+$(document).ready(function() {
+
+// $('body').css('display', 'none');
+//
+// $('body').fadeIn(1000);
+
+
+
+$('.workNavB').click(function(event) {
+
+event.preventDefault();
+newLocation = this.href
+
+  $('body').fadeOut(300,newpage);
+
+
+});
+
+function newpage() {
+
+window.location = newLocation;
+
+}
+
+});
+
+
 
 
 
